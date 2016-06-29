@@ -240,6 +240,10 @@ $plan-features-header-banner-height: 20px;
 
 .plan-features__footer-buttons {
 	text-align: center;
+
+	&.is-empty {
+		height: 56px;
+	}
 }
 
 .plan-features__footer-button {
