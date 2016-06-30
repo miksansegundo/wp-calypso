@@ -27,6 +27,8 @@ function middleware( app ) {
 			callbacks.shift()();
 		}
 
+		process.send( { boot: 'ready' } );
+
 		// In order to show our message *after* webpack's "bundle is now VALID"
 		// we need to skip two event loop ticks, because webpack's callback is
 		// also hooked on the "done" event, it calls nextTick to print the message
