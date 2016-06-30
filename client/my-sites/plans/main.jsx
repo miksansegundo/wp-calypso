@@ -97,7 +97,7 @@ const Plans = React.createClass( {
 
 	showMonthlyPlansLink() {
 		const selectedSite = this.props.sites.getSelectedSite();
-		if ( !selectedSite.jetpack ) {
+		if ( ! selectedSite.jetpack ) {
 			return '';
 		}
 
@@ -189,8 +189,6 @@ const Plans = React.createClass( {
 							showPlanFeatures
 								? <PlansFeaturesMain
 									site={ selectedSite }
-									plans={ this.props.plans }
-									sitePlans={ this.props.sitePlans }
 									intervalType={ this.props.intervalType } />
 								: <PlanList
 									site={ selectedSite }
