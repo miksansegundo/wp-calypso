@@ -74,7 +74,7 @@ const Start = React.createClass( {
 				{ /* Have not followed a site yet */ }
 				{ ! canGraduate && hasRecommendations &&
 					<div className="reader-start__bar is-follow">
-						<span className="reader-start__bar-text">{ this.translate( 'Follow one or more sites to get started.' ) }</span>
+						<span className="reader-start__bar-text">{ this.translate( 'Follow some sites to begin.' ) }</span>
 					</div>
 				}
 
